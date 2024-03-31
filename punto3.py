@@ -4,7 +4,7 @@ hechos = {'the sun is behind the clouds': True, 'air is very heavy and cool': Tr
 
 # Reglas
 def R1(hechos):
-    if hechos.get('temperature is les than 20*', True) and hechos.get('there is humidity on the air', True):
+    if hechos.get('temperature is less than 20*', True) and hechos.get('there is humidity on the air', True):
         return {'there are chances of rain': True}
 
 def R2(hechos):
@@ -12,7 +12,7 @@ def R2(hechos):
         return {'the temperature is less than 20*': True}
 
 def R3(hechos):
-    if hechos.get('air is heavy', False):
+    if hechos.get('air is heavy', True):
         return {'there is humidity on the air': True}
 
 
